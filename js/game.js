@@ -106,11 +106,20 @@ $(document).ready(function () {
         });
 
         //change ship position when buttom press is true
+        if (rightKeyPressed || leftKeyPressed) {
+            $('#ship-container').css({
+                left: function (index, oldValue) {
+                    return calculateNewValue(oldValue);
+                }
+            });
+        }
+        
         $('#ship-container').css({
             left: function (index, oldValue) {
                 return calculateNewValue(oldValue);
             }
         });
+
         if ($('#enemy-container').length && $('#shot').length) {
             // console.log('Element found!');
 
