@@ -113,12 +113,6 @@ $(document).ready(function () {
                 }
             });
         }
-        
-        $('#ship-container').css({
-            left: function (index, oldValue) {
-                return calculateNewValue(oldValue);
-            }
-        });
 
         if ($('#enemy-container').length && $('#shot').length) {
             // console.log('Element found!');
