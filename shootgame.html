@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script async defer src="js/game.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Shooting Game</title>
+</head>
+
+<body>
+    <div id="end">
+        <span class="end-text"></span>
+        <span class="end-text-small">Use space bar to shoot enemy and arrow keys to move. Press enter to start.</span>
+    </div>
+    
+    <div id="score">Your score: <span id="score-count">0</span></div>
+    <div id="level">Level: <span id="level-count">1</span></div>
+    <div class="sky"></div>
+    <div class="enemy-animation" id="enemy-container">
+        <img src="images/ship1-concept-finished-smaller.png" width="200" alt="enemy spaceship">
+        <img id="blast" src="images/explosion.gif" width="150" alt="a gif animation of explosion">
+        <!-- <div id="enemy-fire"></div> -->
+    </div>
+    <div id="ship-container">
+        <div id="ship">
+        </div>
+        <img id="blast-ship" src="images/explosion.gif" width="150" alt="a gif animation of explosion">
+    </div>
+
+    <div class="huge-planet"></div>
+    <div class="exp-planet"></div>
+    <div class="moon"></div>
+    <div class="asteroid"></div>
+</body>
+
+</html>
+<!-- Designed & Developed by Hitesh Patel -->
